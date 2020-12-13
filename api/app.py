@@ -2,9 +2,9 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route('/python/tickers/<ticker>')
-def index(ticker):
-    return 'Python success: ' + ticker
+@app.route('/')
+def index():
+    return 'Python route'
 
 if __name__ == '__main__':
     app.run()
